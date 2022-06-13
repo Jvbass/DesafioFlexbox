@@ -1,0 +1,159 @@
+:root {
+    --platinum: #e8ebe4;
+    --darkjungle: #1b1f21;
+    --bluebell: #a491d2;
+    --palelavender: #D4DCFF;
+    --oldsilver: #828485;
+    --font-OpS: "Open Sans", sans-serif;
+    --font-Rbt: "Roboto", sans-serif;
+  }
+
+* {
+    padding:0px; 
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: var(--font-OpS);
+    font-weight: 500;
+    display: flex;
+    background-color: var(--platinum);
+}
+
+h1 {
+    font-family: var(--font-Rbt);
+    font-weight: 400;
+    font-size: 3.125rem;
+}
+
+/* SECTION USER  */
+.section_user {
+    width: 20%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+header {
+    min-height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--oldsilver) ;
+    padding: 0rem 2rem ;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.user img{
+    border-radius: 50%;
+    max-width: 3rem;
+    max-height: 3rem;
+}
+.user_data{
+    padding-left: 0.8rem;
+}
+.user_data small {
+    color: var(--oldsilver);
+    display: block;
+    margin-top: 0.3rem;
+}
+.user_icon {
+    display: flex;
+    align-items: center;
+}
+.user_icon i{
+    color: var(--oldsilver) ;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.user_icon i:hover {
+    color: var(--palelavender);
+}
+.user_icon i:focus {
+     color: var(--platinum);
+}
+
+/* SECTION BUTTON  */
+.section_button {
+    min-height: 8rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-bottom: solid 1.5px var(--oldsilver);
+}
+
+.section_button button {
+    color: #FFF;
+    background-color:var(--bluebell) ;
+    border:none;
+    min-width: 13rem;
+    min-height: 3rem;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--palelavender);
+    color: var(--oldsilver);
+}
+
+/* SECTION CONTACTS  */
+.section_contacts {
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    min-height:7rem;
+    padding-left: 2rem;
+    border-bottom: solid 1.5px var(--oldsilver);
+}
+
+.section_contacts a {
+    text-decoration: none;
+}
+.contact:hover {
+    background: var(--palelavender);
+    color: var(--oldsilver);
+}
+.contact img {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+.contact_data {
+    padding: 1rem;
+}
+.contact .name{
+    font-size: 1.25rem;
+}
+.contact .subname{
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+/* SECTION CHAT  */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: var(--platinum);
+    text-align: center;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 0px 3px rgba(0, 0, 0, 0.23);
+}
+main img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1.25rem;
+}  
+main p {
+    max-width: 480px;
+    text-align: center;
+    line-height: 1.5; /*distancia entre lineas de texto*/
+}
